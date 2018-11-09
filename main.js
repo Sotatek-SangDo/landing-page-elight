@@ -1,21 +1,35 @@
-let landingSilderIndex = 1;
-let ele = document.getElementsByClassName("slide-item__container");
-//carousel();
-showDivs(landingSilderIndex);
-function plusDivs(num) {
-  showDivs(landingSilderIndex += num);
+let landingSilderIndex = 0;
+let reviewIndex = 1;
+const classSlider = "slide-item__container";
+const classReview = "reviews__item";
+
+//create slide
+//carouselSlider();
+carouselSlider(classSlider, 1);
+if (window.orientation !== undefined) {
+  carousel();
 }
 
-function carousel() {
-    for (let i = 0; i < ele.length; i++) {
-       ele[i].style.display = "none";
-    }
-    landingSilderIndex++;
-    if (landingSilderIndex > ele.length) landingSilderIndex = 1;
-    ele[landingSilderIndex-1].style.display = "block";
-    setTimeout(carousel, 5000);
+//showDivs(landingSilderIndex);
+
+function plusDivs(className, num) {
+  const newIndex = className === classSlider ? (landingSilderIndex += num) : (reviewIndex += num);
+  className === classSlider ? showSlideDivs(className, newIndex) : showRewiewDivs(className, newIndex);
 }
-function showDivs(num) {
+
+function carouselSlider() {
+  const ele = document.getElementsByClassName(classSlider);
+  for (let i = 0; i < ele.length; i++) {
+     ele[i].style.display = "none";
+  }
+  landingSilderIndex++;
+  if (landingSilderIndex > ele.length) landingSilderIndex = 1;
+  ele[landingSilderIndex-1].style.display = "block";
+  //setTimeout(carouselSlider, 5000);
+}
+
+function showSlideDivs(className, num) {
+  const ele = document.getElementsByClassName(className);
   if(num > ele.length) landingSilderIndex = 1;
   if (num < 1) landingSilderIndex = ele.length;
   for (let i = 0; i < ele.length; i++) {
@@ -24,20 +38,52 @@ function showDivs(num) {
   ele[landingSilderIndex-1].style.display = "block";
 }
 
+function showRewiewDivs(className, num) {
+  const ele = document.getElementsByClassName(className);
+  if(num > ele.length) reviewIndex = 1;
+  if (num < 1) reviewIndex = ele.length;
+  for (let i = 0; i < ele.length; i++) {
+    ele[i].style.display = "none";
+  }
+  ele[reviewIndex-1].style.display = "block";
+}
+
+function carousel() {
+  const ele = document.getElementsByClassName(classReview);
+  for (let i = 0; i < ele.length; i++) {
+     ele[i].style.display = "none";
+  }
+  reviewIndex++;
+  if (reviewIndex > ele.length) reviewIndex = 1;
+  ele[reviewIndex-1].style.display = "block";
+  //setTimeout(carousel, 10000);
+}
+
 $(function() {
-    window.isMobile = /Android|webOS|iPhone|iPad/i.test(navigator.userAgent);
-    if (window.isMobile) {
+    if (window.orientation !== undefined) {
         $('#menu-bar').click(function() {
             let parent = $(this).parent();
             parent.find('.header-center').toggle();
             parent.find('.header-right').toggle();
         });
-        $(document).mouseup(function (e) {
-            let $menu = $('.header-center');
-            if (!$menu.is(e.target) && $menu.has(e.target).length === 0 && !$(e.target).hasClass('fa-bars')) {
-                $menu.hide();
-                $('.header-right').hide();
-            }
+        window.addEventListener('touchstart', function(event) {
+          let $menu = $('.header-center');
+          if ($menu.length && !$(event.target).hasClass('fa-bars') && !event.target.hasAttribute('href')) {
+            $menu.hide();
+            $('.header-right').hide();
+          }
         });
     }
+    $('a').click(function(e) {
+        e.preventDefault();
+        if ($(this).attr('href').indexOf('#') >=0) {
+          const target = $(this)[0].hash;
+          $('html, body').animate({scrollTop : $(target).offset().top}, 2000);
+        }
+    });
+    const $tagA = 'ul.menu li';
+    $(`${$tagA} a`).click(function(e) {
+      $($tagA).removeClass('active');
+      $(e.target).parent().addClass('active');
+    });
 });

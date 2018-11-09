@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Landing Page</title>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5W88L43');
+    </script>
+    <!-- End Google Tag Manager -->    
+    <title>Sách Tiếng Anh Cơ Bản - Elight</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link rel="icon" type="image/png" href="images/favi/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="geo.position" content="21.041499;105.774543">
@@ -17,39 +27,66 @@
     <meta name="keywords" content="English,Elight Learning,Học tiếng Anh giao tiếp,tiếng Anh,Learning English">
     <meta name="author" content="Elight">
     <link href="https://elight.edu.vn" rel="canonical">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
     <!--Style-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5W88L43"
+            height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="157479984792857"
+    logged_in_greeting="Chào bạn ! Bấm vào đây để trao đổi và được tư vấn miễn phí về Tiếng Anh nhé ! "
+    logged_out_greeting="Chào bạn ! Bấm vào đây để trao đổi và được tư vấn miễn phí về Tiếng Anh nhé ! ">
+    </div>
+    <!--end fb chat-->
     <header>
         <section class="container-top">
             <div class="header-left">
                 <div class="logo">elight</div>
                 <div class="btn-regis">
-                    <a href="#">đăng kí sách</a>
+                    <a href="#form">đăng kí sách</a>
                 </div>
             </div>
             <div class="header-center">
                 <div class="main-menu">
                     <ul class="menu">
                         <li class="menu-item active">
-                            <a href="#">bộ sách phù hợp với ai?</a></li>
+                            <a href="#intro">bộ sách phù hợp với ai?</a></li>
                         <li class="menu-item">
-                            <a href="#">lộ trình học cùng sách</a>
+                            <a href="#step">lộ trình học cùng sách</a>
                         </li>
                         <li class="menu-item">
-                            <a href="">giá & ưu đãi đi kèm</a>
+                            <a href="#video">giá & ưu đãi đi kèm</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="header-right">
                 <div class="btn-support">
-                    <p class="btn-sp-text">gọi tư vấn ngay</p>
-                    <span class="btn-phone">0981 937 066</span>
+                    <a href="tel:0981937066">
+                        <p class="btn-sp-text">gọi tư vấn ngay</p>
+                        <span class="btn-phone">0981 937 066</span>
+                    </a>
                 </div>
             </div>
             <i id="menu-bar" class="fas fa-bars"></i>
@@ -66,7 +103,7 @@
                 <div class="book">Sách TIẾNG ANH CƠ BẢN 2018</div>
                 <div class="slider-btn">
                     <button class="btn1 btn-review">
-                        <a href="#">XEM NGAY CÁCH HỌC</a>
+                        <a href="#why">XEM NGAY CÁCH HỌC</a>
                     </button>
                 </div>
             </div>
@@ -75,22 +112,37 @@
         <div class="slide-item__container slide-index2">
             <div class="slide-desc__container">
                 <div class="title">
+                    <span class="small-title">Giáo trình tự học <span class="underline">duy nhất & Tốt nhất</span></span></br>
+                    Dành cho người mới  bắt đầu
+                </div>
+                <div class="book">Sách TIẾNG ANH CƠ BẢN 2018</div>
+                <div class="slider-btn">
+                    <button class="btn1 btn-review">
+                        <a href="#why">XEM NGAY CÁCH HỌC</a>
+                    </button>
+                </div>
+            </div>
+            <div class="img-banner img2"></div>
+        </div>
+        <div class="slide-item__container slide-index3">
+            <div class="slide-desc__container">
+                <div class="title">
                     <span class="small-title">60 ngày làm chủ  nền tảng kiến thức</span></br>
                     Từ vựng  - Ngữ pháp - Phát âm
                 </div>
                 <div class="book">Sách TIẾNG ANH CƠ BẢN 2018</div>
                 <div class="slider-btn">
                     <button class="btn2 btn-review">
-                        <a href="#">TÌM HIỂU NGAY</a>
+                        <a href="#why">TÌM HIỂU NGAY</a>
                     </button>
                 </div>
             </div>
-            <div class="img-banner img2"></div>
+            <div class="img-banner img3"></div>
         </div>
-        <button class="btn-slide btn-prev" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="btn-slide btn-next" onclick="plusDivs(1)">&#10095;</button>
+        <button class="btn-slide btn-prev" onclick="plusDivs('slide-item__container', -1)">&#10094;</button>
+        <button class="btn-slide btn-next" onclick="plusDivs('slide-item__container', 1)">&#10095;</button>
     </section>
-    <section class="why">
+    <section class="why" id="why">
         <h1 class="why-title">TẠI SAO <span class="red">SỐNG CHẾT</span> CŨNG PHẢI <span class="red">GIỎI TỪ VỰNG TIẾNG ANH ?</span></h1>
         <div class="top-content">
             <div class="top-content__left">
@@ -110,7 +162,7 @@
             </ul>
         </div>
         <div class="high-line">
-            <a href="#">
+            <a href="#video">
                 <button class="btn-review">Xem Sách Ngay</button>
             </a>
             <span class="text">
@@ -119,7 +171,7 @@
             </span>
         </div>
     </section>
-    <section class="book-intro">
+    <section class="book-intro" id="intro">
         <div class="intro-container">
             <div class="content-left"></div>
             <div class="content-right">
@@ -145,14 +197,14 @@
                     </span>
                 </div>
                 <div class="right-btn">
-                    <a href="#">
+                    <a href="#form">
                         <button class="review">MÌNH MUỐN ĐẶT SÁCH</button>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="step1">
+    <section class="step1" id="step">
         <div class="container">
             <h2>4 bước chinh phục 1000 từ vựng thiết yếu</h2>
             <div class="content">
@@ -178,7 +230,7 @@
                         <li>Mở audio nghe từ 3 - 5 lần và nhẩm đọc theo. </li>
                         <li>Nhận biết loại từ , thử đặt 1 câu đơn sử dụng từ đó. </li>
                     </ul>
-                    <a href="#">
+                    <a href="#form">
                         <button class="review">TÔI MUỐN ĐẶT SÁCH</button>
                     </a>
                 </div>
@@ -200,7 +252,7 @@
                         <li>Hãy làm các bài tập nhỏ, mini-game để giúp luyện não, vui vẻ tiếp nhận kiến thức, học được nhiều từ hơn. </li>
                         <li>Làm bài tập dạng nghe hội thoại điền từ còn thiếu là cách hoàn hảo để bạn vừa thuộc cách viết từ, từ đó đọc như thế nào, nghe từ và biết dùng trong hoàn cảnh nào.</li>
                     </ul>
-                    <a href="#">
+                    <a href="#form">
                         <button class="review">TÔI MUỐN ĐẶT SÁCH</button>
                     </a>
                 </div>
@@ -226,10 +278,10 @@
                     </div>
                     <p class="last"><span class="highline">Sách Tiếng Anh Cơ Bản</span> là cuốn sách duy nhất hiện nay chú trọng kỹ năng Đọc & Viết - cực kỳ quan trọng trong đời sống khi bạn hay phải đọc báo cáo, viết email, nhắn tin bằng tiếng Anh. </p>
                     <div class="bottom">
-                        <a class="txt" href="#">
+                        <a class="txt" href="#video">
                             <span>Xem giá và ưu đãi</span>
                         </a>
-                        <a href="#">
+                        <a href="#form">
                             <button>ĐẶT SÁCH NGAY</button>
                         </a>
                     </div>
@@ -247,10 +299,10 @@
                     </div>
                     <p class="last"><span class="highline">Sách Tiếng Anh Cơ Bản</span> rất chú trọng về tính thực tế, chính xác. Toàn bộ các đoạn văn, tình huống luyện nghe, nói đều được thu âm, viết bởi giảng viên bản ngữ, kiểm duyệt qua 10 vòng để đảm bảo hay, chuẩn, dễ hiểu, dễ áp dụng.</p>
                     <div class="bottom">
-                        <a class="txt" href="#">
+                        <a class="txt" href="#video">
                             <span>Xem giá và ưu đãi</span>
                         </a>
-                        <a href="#">
+                        <a href="#form">
                             <button>ĐẶT SÁCH NGAY</button>
                         </a>
                     </div>
@@ -259,6 +311,7 @@
         </div>
     </section>
     <section class="patience">
+        <div class="fade"></div>
         <div class="content">
             <p class="title">…Tỉ mỉ và nhẫn nại, Elight sẽ đồng hành cùng Người Mua Sách đến trọn đời !</p>
             <p class="p2">Học tiếng Anh không chỉ là hôm nay ngày mai, mà là cả hành trình dài cố gắng, cần nhiều sự hỗ trợ, động viên kịp thời. Vì vậy, khi mua sách Tiếng Anh Cơ Bản, bạn sẽ được:</p>
@@ -279,13 +332,13 @@
                 dạy tiếng Anh lớn nhất thế giới. Chúng tôi biết bạn sẽ 
                 không tìm được video khác tốt hơn ở bất cứ đâu.
             </p>
-            <a href="#" class="btn">
+            <a href="#form" class="btn">
                 <button>Mình đặt sách nhé !</button>
             </a>
             <p class="last"> …để Elight và Sách Tiếng Anh Cơ Bản đồng hành  giúp đỡ bạn.</p>
         </div>
     </section>
-    <section class="video">
+    <section class="video" id="video">
         <div class="container">
             <div class="left">
                 <h4>Video Review <span>Sách Tiếng Anh Cơ Bản 2018</span></h4>
@@ -300,7 +353,7 @@
                 <p><span>2.</span> Poster sơ đồ tư duy - Tổng hợp 12 Thì và 100 Câu Giao Tiếp Thông Dụng trong Tiếng Anh.</p>
                 <p><span>3.</span> Hệ thống Video độc quyền có giảng viên giảng dạy.</p>
                 <p><span>4.</span> Tặng ebook Sơ Đồ Tự Học hỗ trợ học kèm sách.</p>
-                <a href="#">
+                <a href="#form">
                     <button>ĐĂNG KÝ TẠI ĐÂY</button>
                 </a>
                 <p class="subscribe">76.589 người đã đăng kí</p>
@@ -376,6 +429,8 @@
                 </div>
             </div>
         </div>
+        <button class="btn-slide btn-prev" onclick="plusDivs('reviews__item', -1)">&#10094;</button>
+        <button class="btn-slide btn-next" onclick="plusDivs('reviews__item', 1)">&#10095;</button>
     </section>
     <section class="buy-book">
         <div class="container">
@@ -390,7 +445,7 @@
                     <div class="desc">
                         <p class="title">1. ĐĂNG KÝ THÔNG TIN</p>
                         <p>Đăng ký thông tin ngay. Đừng lo, Elight sẽ hướng dẫn bạn kĩ càng.</p>
-                        <a href="#">
+                        <a href="#form">
                             <button>ĐĂNG KÝ NGAY</button>
                         </a>
                     </div>
@@ -431,7 +486,7 @@
             </div>
         </div>
     </section>
-    <section class="subscribe-form">
+    <section class="subscribe-form" id="form">
         <div class="fade"></div>
         <div class="header">
             <h5>ĐẶT MUA SÁCH TIẾNG ANH CƠ BẢN </h5>
