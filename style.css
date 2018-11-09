@@ -419,6 +419,34 @@ body section#landing-slider .slide-item__container .slide-desc__container .title
     line-height: 27px;
   }
 }
+body section#landing-slider .slide-item__container .slide-desc__container .title .small-title1 {
+  font-size: 40px;
+  color: #102b6b;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body section#landing-slider .slide-item__container .slide-desc__container .title .small-title1 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body section#landing-slider .slide-item__container .slide-desc__container .title .small-title1 {
+    font-size: 1.4rem;
+  }
+}
+body section#landing-slider .slide-item__container .slide-desc__container .title .title1 {
+  font-size: 60px;
+  color: #102b6b;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body section#landing-slider .slide-item__container .slide-desc__container .title .title1 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body section#landing-slider .slide-item__container .slide-desc__container .title .title1 {
+    font-size: 1rem;
+  }
+}
 body section#landing-slider .slide-item__container .slide-desc__container .title .small-title {
   font-size: 35px;
 }
@@ -472,6 +500,15 @@ body section#landing-slider .slide-item__container .slide-desc__container .slide
     width: 190px;
     height: 50px;
   }
+}
+body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn3 {
+  background-color: #f9c835;
+}
+body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn3:hover {
+  background-color: #ffffff;
+}
+body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn3:hover a {
+  color: #f9c835;
 }
 body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn1 {
   background-color: #ee244e;
@@ -529,8 +566,8 @@ body section#landing-slider .slide-item__container .img-banner {
 }
 body section#landing-slider .slide-item__container .img-banner.img1 {
   background: url('images/Ảnh trong banner1.png') no-repeat;
-  background-position: 60% 35%;
-  background-size: 170%;
+  background-position: 50% 50%;
+  background-size: 105%;
 }
 body section#landing-slider .slide-item__container .img-banner.img2 {
   background: url('images/Ảnh trong banner2.png') no-repeat;

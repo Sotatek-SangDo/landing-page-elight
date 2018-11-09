@@ -380,6 +380,26 @@ body {
                         text-align: center;
                         line-height: 27px;
                     }
+                    .small-title1 {
+                        .fs(40px);
+                        color: rgba(16, 43, 107, 1);
+                        @media (min-width: 320px) and (max-width: 480px) {
+                            .fs(12px);
+                        }
+                        @media (min-width: 768px) and (max-width: 1024px) {
+                            .fs(1.4rem);
+                        }
+                    }
+                    .title1 {
+                        .fs(60px);
+                        color: rgba(16, 43, 107, 1);
+                        @media (min-width: 320px) and (max-width: 480px) {
+                            .fs(1rem);
+                        }
+                        @media (min-width: 768px) and (max-width: 1024px) {
+                            .fs(1rem);
+                        }
+                    }
                     .small-title {
                         .fs(35px);
                         @media (min-width: 320px) and (max-width: 480px) {
@@ -420,6 +440,15 @@ body {
                         @media (min-width: 768px) and (max-width: 1024px) {
                             .w(190px);
                             .h(50px);
+                        }
+                        &.btn3 {
+                            .bgColor(rgba(249, 200, 53, 1));
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 1);
+                            }
+                            &:hover a {
+                                color: rgba(249, 200, 53, 1);
+                            }
                         }
                         &.btn1 {
                             .bgColor(rgba(238, 36, 78, 1));
@@ -471,8 +500,8 @@ body {
                 }
                 &.img1 {
                     .bgImg('images/Ảnh trong banner1.png', no-repeat);
-                    background-position: 60% 35%;
-                    background-size: 170%;
+                    background-position: 50% 50%;
+                    background-size: 105%;
                 }
                 &.img2 {
                     .bgImg('images/Ảnh trong banner2.png', no-repeat);
