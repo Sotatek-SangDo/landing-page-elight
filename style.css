@@ -1918,8 +1918,8 @@ body .patience {
 }
 @media (min-width: 1366px) and (max-width: 1500px) {
   body .patience {
-    background-size: 120%;
-    background-position: -15% 53%;
+    background-size: 125%;
+    background-position: 7% 55%;
   }
 }
 body .patience .fade {
