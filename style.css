@@ -668,7 +668,8 @@ body section#landing-slider .slide-item__container .img-banner {
 }
 @media (min-width: 1366px) and (max-width: 1500px) {
   body section#landing-slider .slide-item__container .img-banner {
-    right: 0%;
+    right: 2%;
+    width: 450px;
   }
 }
 body section#landing-slider .slide-item__container .img-banner.img1 {
@@ -676,15 +677,32 @@ body section#landing-slider .slide-item__container .img-banner.img1 {
   background-position: 50% 50%;
   background-size: 105%;
 }
+@media (min-width: 1366px) and (max-width: 1500px) {
+  body section#landing-slider .slide-item__container .img-banner.img1 {
+    background-size: 128%;
+  }
+}
 body section#landing-slider .slide-item__container .img-banner.img2 {
   background: url('images/Ảnh trong banner2.png') no-repeat;
   background-position: 60% 35%;
   background-size: 170%;
 }
+@media (min-width: 1366px) and (max-width: 1500px) {
+  body section#landing-slider .slide-item__container .img-banner.img2 {
+    background-size: 200%;
+    background-position: 58% 35%;
+  }
+}
 body section#landing-slider .slide-item__container .img-banner.img3 {
   background: url('images/Ảnh trong banner3.png') no-repeat;
   background-position: 60% 35%;
   background-size: 170%;
+}
+@media (min-width: 1366px) and (max-width: 1500px) {
+  body section#landing-slider .slide-item__container .img-banner.img3 {
+    background-size: 200%;
+    background-position: 58% 35%;
+  }
 }
 body section#landing-slider .btn-slide {
   color: #ffffff;
@@ -748,7 +766,7 @@ body .why {
 }
 @media screen and (width: 1366px), screen and (height: 768px) {
   body .why {
-    height: 736px;
+    height: auto;
   }
 }
 body .why h1.why-title {
@@ -1214,6 +1232,7 @@ body .book-intro .intro-container .content-right .right-btn a {
   display: block;
   width: 100%;
   height: 100%;
+  margin-top: 20px;
 }
 body .book-intro .intro-container .content-right .right-btn a .review {
   background-color: #ee244e;
@@ -1230,7 +1249,8 @@ body .step1,
 body .step2 {
   width: 100%;
   background-color: #e8ebf1;
-  height: 746px;
+  height: auto;
+  padding-bottom: 10px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .step1,
@@ -1896,6 +1916,12 @@ body .patience {
     background: #eaeff3;
   }
 }
+@media (min-width: 1366px) and (max-width: 1500px) {
+  body .patience {
+    background-size: 120%;
+    background-position: -15% 53%;
+  }
+}
 body .patience .fade {
   background-color: rgba(0, 0, 0, 0.2);
   height: 738px;
@@ -1926,6 +1952,11 @@ body .patience .content {
     top: 5%;
     left: 8%;
     width: 85%;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1500px) {
+  body .patience .content {
+    width: 29%;
   }
 }
 body .patience .content .image {
@@ -2056,7 +2087,8 @@ body .patience .content .last {
 body .video {
   width: 100%;
   background-color: #e2e2e2;
-  min-height: 485px;
+  height: auto;
+  padding-bottom: 20px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .video {
@@ -2083,6 +2115,7 @@ body .video .container {
 @media (min-width: 1366px) and (max-width: 1500px) {
   body .video .container {
     padding: 3% 0 0 0;
+    width: 80%;
   }
 }
 body .video .container .left {
@@ -2133,8 +2166,8 @@ body .video .container .left iframe {
 }
 @media (min-width: 1366px) and (max-width: 1500px) {
   body .video .container .left iframe {
-    width: 420px;
-    height: 236px;
+    width: 500px;
+    height: 295px;
   }
 }
 body .video .container .right {
@@ -2142,7 +2175,7 @@ body .video .container .right {
   width: calc(100% - 780px);
   height: auto;
   vertical-align: top;
-  margin-left: 8%;
+  margin-left: 6%;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .video .container .right {
@@ -2158,7 +2191,7 @@ body .video .container .right {
 }
 @media (min-width: 1366px) and (max-width: 1500px) {
   body .video .container .right {
-    width: calc(100% - 420px - 9%);
+    width: calc(100% - 600px - 6%);
   }
 }
 body .video .container .right h5 {
@@ -2199,6 +2232,12 @@ body .video .container .right .desc {
     margin-bottom: 15px;
   }
 }
+@media (min-width: 1366px) and (max-width: 1500px) {
+  body .video .container .right .desc {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+}
 body .video .container .right .desc span {
   font-family: Averta-Semibold;
 }
@@ -2219,6 +2258,11 @@ body .video .container .right p {
     margin-bottom: 6px;
   }
 }
+@media (min-width: 1366px) and (max-width: 1500px) {
+  body .video .container .right p {
+    font-size: 13px;
+  }
+}
 body .video .container .right p span {
   font-size: 20px;
   font-family: jamai;
@@ -2231,6 +2275,11 @@ body .video .container .right p span {
 @media (min-width: 320px) and (max-width: 480px) {
   body .video .container .right p span {
     font-size: 16px;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1500px) {
+  body .video .container .right p span {
+    font-size: 15px;
   }
 }
 body .video .container .right a {
@@ -2495,6 +2544,11 @@ body .buy-book .container {
     padding: 3%;
   }
 }
+@media (min-width: 1366px) and (max-width: 1500px) {
+  body .buy-book .container {
+    width: 90%;
+  }
+}
 body .buy-book .container h4 {
   font-size: 25px;
   color: #102b6b;
@@ -2529,7 +2583,11 @@ body .buy-book .container .steps {
 body .buy-book .container .steps .step {
   float: left;
   max-width: 22%;
-  margin-right: 2%;
+  margin-right: 3%;
+}
+body .buy-book .container .steps .step:last-child {
+  margin-right: 0;
+  float: right;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .buy-book .container .steps .step {

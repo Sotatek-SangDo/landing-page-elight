@@ -622,22 +622,34 @@ body {
                     .r(2%);
                 }
                 @media (min-width: 1366px) and (max-width: 1500px) {
-                    .r(0%);
+                    .r(2%);
+                    .w(450px);
                 }
                 &.img1 {
                     .bgImg('images/Ảnh trong banner1.png', no-repeat);
                     background-position: 50% 50%;
                     background-size: 105%;
+                    @media (min-width: 1366px) and (max-width: 1500px) {
+                        background-size: 128%;
+                    }
                 }
                 &.img2 {
                     .bgImg('images/Ảnh trong banner2.png', no-repeat);
                     background-position: 60% 35%;
                     background-size: 170%;
+                    @media (min-width: 1366px) and (max-width: 1500px) {
+                        background-size: 200%;
+                        background-position: 58% 35%;
+                    }
                 }
                 &.img3 {
                     .bgImg('images/Ảnh trong banner3.png', no-repeat);
                     background-position: 60% 35%;
                     background-size: 170%;
+                    @media (min-width: 1366px) and (max-width: 1500px) {
+                        background-size: 200%;
+                        background-position: 58% 35%;
+                    }
                 }
             }
         }
@@ -693,7 +705,7 @@ body {
         }
         @media screen and (width: 1366px),
         screen and (height: 768px) {
-            .h(736px);
+            .h(auto);
         }
         h1.why-title {
             text-align: center;
@@ -1065,6 +1077,7 @@ body {
                         display: block;
                         .w(100%);
                         .h(100%);
+                        margin-top: 20px;
                         .review {
                             background-color: rgba(238, 36, 78, 1);
                             .w(100%);
@@ -1084,7 +1097,8 @@ body {
     .step1, .step2 {
         .w(100%);
         .bgColor(rgba(232, 235, 241, 1));
-        .h(746px);
+        .h(auto);
+        padding-bottom: 10px;
         @media (min-width: 768px) and (max-width: 1024px) {
             display: none;
         }
@@ -1555,6 +1569,10 @@ body {
         @media (min-width: 320px) and (max-width: 480px) {
             background: #eaeff3;
         }
+        @media (min-width: 1366px) and (max-width: 1500px) {
+            background-size: 120%;
+            background-position: -15% 53%;
+        }
         .fade {
             background-color: rgba(0, 0, 0, .2);
             .h(738px);
@@ -1577,6 +1595,9 @@ body {
                 .t(5%);
                 .l(8%);
                 .w(85%);
+            }
+            @media (min-width: 1366px) and (max-width: 1500px) {
+                .w(29%);
             }
             .image {
                 display: none;
@@ -1682,7 +1703,8 @@ body {
     .video {
         .w(100%);
         background-color: rgba(226, 226, 226, 1);
-        min-height: 485px;
+        height: auto;
+        padding-bottom: 20px;
         @media (min-width: 768px) and (max-width: 1024px) {
             display: none;
         }
@@ -1703,6 +1725,7 @@ body {
             }
             @media (min-width: 1366px) and (max-width: 1500px) {
                 padding: 3% 0 0 0;
+                .w(80%);
             }
             .left {
                 display: inline-block;
@@ -1737,8 +1760,8 @@ body {
                         .w(100%);
                     }
                     @media (min-width: 1366px) and (max-width: 1500px) {
-                        .w(420px);
-                        .h(236px);
+                        .w(500px);
+                        .h(295px);
                     }
                 }
             }
@@ -1747,7 +1770,7 @@ body {
                 .w(calc(~'100% - 780px'));
                 .h(auto);
                 vertical-align: top;
-                margin-left: 8%;
+                margin-left: 6%;
                 @media (min-width: 768px) and (max-width: 1024px) {
                     display: none;
                 }
@@ -1757,7 +1780,7 @@ body {
                     padding: 4%;
                 }
                 @media (min-width: 1366px) and (max-width: 1500px) {
-                    .w(calc(~'100% - 420px - 9%'));
+                    .w(calc(~'100% - 600px - 6%'));
                 }
                 h5 {
                     .fs(25px);
@@ -1788,6 +1811,10 @@ body {
                     color: rgba(16, 43, 107, 1);
                     line-height: 25px;
                     margin-bottom: 30px;
+                    @media (min-width: 1366px) and (max-width: 1500px) {
+                        margin-bottom: 15px;
+                        .fs(13px);
+                    }
                     span {
                         .ff(Averta-Semibold);
                     }
@@ -1802,6 +1829,9 @@ body {
                         .fs(11px);
                         margin-bottom: 6px;
                     }
+                    @media (min-width: 1366px) and (max-width: 1500px) {
+                        .fs(13px);
+                    }
                     color: rgba(16, 43, 107, 1);
                     .ff(Averta-Regular);
                     span {
@@ -1812,6 +1842,9 @@ body {
                         }
                         @media (min-width: 320px) and (max-width: 480px) {
                             .fs(16px);
+                        }
+                        @media (min-width: 1366px) and (max-width: 1500px) {
+                            .fs(15px);
                         }
                     }
                 }
@@ -2044,6 +2077,9 @@ body {
                 .w(90%);
                 padding: 3%;
             }
+            @media (min-width: 1366px) and (max-width: 1500px) {
+                .w(90%);
+            }
             h4 {
                 .fs(25px);
                 color: rgba(16, 43, 107, 1);
@@ -2069,7 +2105,11 @@ body {
                 .step {
                     float: left;
                     max-width: 22%;
-                    margin-right: 2%;
+                    margin-right: 3%;
+                    &:last-child {
+                        margin-right: 0;
+                        float: right;
+                    }
                     @media (min-width: 768px) and (max-width: 1024px) {
                         display: none;
                     }
