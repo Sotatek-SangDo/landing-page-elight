@@ -4,13 +4,11 @@ const classSlider = "slide-item__container";
 const classReview = "reviews__item";
 
 //create slide
-//carouselSlider();
-carouselSlider(classSlider, 1);
+carouselSlider();
 if (window.orientation !== undefined) {
   carousel();
 }
 
-//showDivs(landingSilderIndex);
 
 function plusDivs(className, num) {
   const newIndex = className === classSlider ? (landingSilderIndex += num) : (reviewIndex += num);
@@ -25,7 +23,7 @@ function carouselSlider() {
   landingSilderIndex++;
   if (landingSilderIndex > ele.length) landingSilderIndex = 1;
   ele[landingSilderIndex-1].style.display = "block";
-  //setTimeout(carouselSlider, 5000);
+  setTimeout(carouselSlider, 5000);
 }
 
 function showSlideDivs(className, num) {
@@ -56,7 +54,7 @@ function carousel() {
   reviewIndex++;
   if (reviewIndex > ele.length) reviewIndex = 1;
   ele[reviewIndex-1].style.display = "block";
-  //setTimeout(carousel, 10000);
+  setTimeout(carousel, 10000);
 }
 
 $(function() {

@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: UVF-SlimTony;
-  src: url('./fonts/UVF SlimTony.ttf'), url('./fonts/UVF SlimTony.ttf') format('truetype');
+  src: url('fonts/UVF SlimTony.ttf'), url('fonts/UVF SlimTony.ttf') format('truetype');
 }
 @font-face {
   font-family: Averta-Black;
@@ -1240,6 +1240,7 @@ body .step2 .container h2 {
   font-size: 40px;
   color: #102b6b;
   margin-bottom: 40px;
+  margin-top: 30px;
   font-family: UVF-SlimTony;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1380,7 +1381,7 @@ body .step2 .container .content .left-content .two-img .small-img.img2 {
 body .step1 .container .content .right-content,
 body .step2 .container .content .right-content {
   display: inline-block;
-  width: calc(100% - 625px);
+  width: calc(100% - 630px);
   height: 100%;
   vertical-align: top;
   padding-left: 60px;
@@ -2882,7 +2883,7 @@ body footer .container .left span.desc p {
 }
 body footer .container .right {
   display: inline-block;
-  width: calc(100% - 12% - 225px);
+  width: calc(100% - 12% - 230px);
   margin-left: 12%;
   height: 100%;
 }
