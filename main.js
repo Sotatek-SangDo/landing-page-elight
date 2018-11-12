@@ -4,7 +4,8 @@ const classSlider = "slide-item__container";
 const classReview = "reviews__item";
 
 //create slide
-carouselSlider();
+//carouselSlider();
+showSlideDivs(classSlider, 0);
 if (window.orientation !== undefined) {
   carousel();
 }
@@ -63,13 +64,6 @@ $(function() {
             let parent = $(this).parent();
             parent.find('.header-center').toggle();
             parent.find('.header-right').toggle();
-        });
-        window.addEventListener('touchstart', function(event) {
-          let $menu = $('.header-center');
-          if ($menu.length && !$(event.target).hasClass('fa-bars') && !event.target.hasAttribute('href')) {
-            $menu.hide();
-            $('.header-right').hide();
-          }
         });
     }
     $('a').click(function(e) {

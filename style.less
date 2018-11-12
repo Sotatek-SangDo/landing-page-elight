@@ -208,6 +208,9 @@ body {
                     .w(60%);
                     padding-top: 6px;
                 }
+                @media (min-width: 1366px) and (max-width: 1500px) {
+                    .w(22%);
+                }
                 .logo, .btn-regis {
                     float: left;
                 }
@@ -276,6 +279,7 @@ body {
                 }
                 @media (min-width: 1366px) and (max-width: 1500px) {
                     padding-left: 6%;
+                    .w(62%);
                 }
                 .main-menu {
                     .w(100%);
@@ -324,6 +328,9 @@ body {
                                 screen and (height: 768px) {
                                     .fs(13px);
                                 }
+                                @media (min-width: 1366px) and (max-width: 1500px) {
+                                    .fs(0.6rem);
+                                }
                             }
                         }
                     }
@@ -350,6 +357,9 @@ body {
                     .l(0);
                     z-index: 9999;
                     .t(222px);
+                }
+                @media (min-width: 1366px) and (max-width: 1500px) {
+                    .w(16%);
                 }
                 .btn-support {
                     .bgColor(rgba(249, 200, 53, 1));
@@ -431,6 +441,8 @@ body {
             .position(absolute);
             .t(0);
             z-index: 99;
+            background-color: rgba(112, 112, 112, 1);
+            opacity: 0.66;
             @media (min-width: 768px) and (max-width: 1024px) {
                 .h(460px);
             }
@@ -519,9 +531,10 @@ body {
                     }
                 }
                 .book {
-                    .fs(36px);
+                    .fs(39px);
                     .color(rgba(249, 200, 53, 1));
                     text-align: center;
+                    .ff(jamai);
                     @media (min-width: 320px) and (max-width: 480px) {
                         .fs(11px);
                     }
@@ -608,6 +621,9 @@ body {
                     height: 225px;
                     .r(2%);
                 }
+                @media (min-width: 1366px) and (max-width: 1500px) {
+                    .r(0%);
+                }
                 &.img1 {
                     .bgImg('images/Ảnh trong banner1.png', no-repeat);
                     background-position: 50% 50%;
@@ -619,7 +635,7 @@ body {
                     background-size: 170%;
                 }
                 &.img3 {
-                    .bgImg('images/Ảnh trong banner2.png', no-repeat);
+                    .bgImg('images/Ảnh trong banner3.png', no-repeat);
                     background-position: 60% 35%;
                     background-size: 170%;
                 }
@@ -644,6 +660,9 @@ body {
                     display: block;
                 }
                 @media (min-width: 320px) and (max-width: 480px) {
+                    display: block;
+                }
+                @media (min-width: 1366px) and (max-width: 1500px) {
                     display: block;
                 }
                 &.btn-prev {
