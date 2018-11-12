@@ -1,9 +1,69 @@
+@font-face {
+  font-family: Averta;
+  src: url('fonts/Averta-Light.ttf'), url('fonts/Averta-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: Averta-Bold;
+  src: url('fonts/Averta-Bold.ttf'), url('fonts/Averta-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Averta-Bold;
+  src: url('fonts/Averta-Bold.ttf'), url('fonts/Averta-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: UVF-SlimTony;
+  src: url('./fonts/UVF SlimTony.ttf'), url('./fonts/UVF SlimTony.ttf') format('truetype');
+}
+@font-face {
+  font-family: Averta-Black;
+  src: url('fonts/Averta-Black.ttf'), url('fonts/Averta-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: jamai;
+  src: url('fonts/jamai.ttf'), url('fonts/jamai.ttf') format('truetype');
+}
+@font-face {
+  font-family: Averta-Regular;
+  src: url('fonts/Averta-Regular.ttf'), url('fonts/Averta-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Averta-SemiboldItalic;
+  src: url('fonts/Averta-SemiboldItalic.ttf'), url('fonts/Averta-SemiboldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: Averta-Semibold;
+  src: url('fonts/Averta-Semibold.ttf'), url('fonts/Averta-Semibold.ttf') format('truetype');
+}
+@font-face {
+  font-family: GeoSlab703-Medium;
+  src: url('fonts/geoslabm.ttf'), url('fonts/geoslabm.ttf') format('truetype');
+}
+@font-face {
+  font-family: GeoSlab703-Extra;
+  src: url('fonts/geoslabe.ttf'), url('fonts/geoslabe.ttf') format('truetype');
+}
+@font-face {
+  font-family: GeoSlab703-Light;
+  src: url('fonts/geoslabl.ttf'), url('fonts/geoslabl.ttf') format('truetype');
+}
+@font-face {
+  font-family: Averta-ExtraBold;
+  src: url('fonts/Averta-ExtraBold.ttf'), url('fonts/Averta-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Averta-BoldItalic;
+  src: url('fonts/Averta-BoldItalic.ttf'), url('fonts/Averta-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: Averta-RegularItalic;
+  src: url('fonts/Averta-RegularItalic.ttf'), url('fonts/Averta-RegularItalic.ttf') format('truetype');
+}
 /**end config**/
 * {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+  font-family: Averta;
 }
 a {
   text-decoration: none;
@@ -25,6 +85,7 @@ ul {
 }
 .red {
   color: red;
+  font-family: Averta-Black;
 }
 .fs-small {
   font-family: auto;
@@ -53,9 +114,6 @@ ul {
     font-size: 1rem;
   }
 }
-body {
-  font-family: 'Oswald', sans-serif;
-}
 body header {
   background-color: #102b6b;
   width: 100%;
@@ -83,7 +141,7 @@ body header .container-top {
 body header .container-top .header-left,
 body header .container-top .header-center,
 body header .container-top .header-right {
-  display: inline-block;
+  float: left;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body header .container-top .header-center,
@@ -99,6 +157,7 @@ body header .container-top .header-right {
 }
 body header .container-top .header-left {
   width: 20%;
+  padding-top: 20px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body header .container-top .header-left {
@@ -107,19 +166,23 @@ body header .container-top .header-left {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body header .container-top .header-left {
-    width: 50%;
+    width: 60%;
+    padding-top: 6px;
   }
 }
 body header .container-top .header-left .logo,
 body header .container-top .header-left .btn-regis {
-  display: inline-block;
+  float: left;
 }
 body header .container-top .header-left .logo {
   width: 34%;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 32px;
-  vertical-align: bottom;
+  text-indent: -9999px;
+  background: url('images/[eLight] Logo_White.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 35px;
+  margin-right: 20px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body header .container-top .header-left .logo {
@@ -226,7 +289,7 @@ body header .container-top .header-center .main-menu .menu .menu-item.active a {
   color: #fbe03d;
 }
 body header .container-top .header-center .main-menu .menu .menu-item a {
-  font-size: 17px;
+  font-size: 12px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -252,8 +315,7 @@ body header .container-top .header-center .main-menu .menu .menu-item a {
 body header .container-top .header-right {
   width: 12%;
   text-align: right;
-  vertical-align: middle;
-  margin-bottom: 13px;
+  padding-top: 10px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body header .container-top .header-right {
@@ -280,7 +342,7 @@ body header .container-top .header-right {
 body header .container-top .header-right .btn-support {
   background-color: #f9c835;
   color: #ffffff;
-  width: 84%;
+  width: 90%;
   border-radius: 20px;
   border: none;
   outline: none;
@@ -307,7 +369,8 @@ body header .container-top .header-right .btn-support {
 }
 body header .container-top .header-right .btn-support .btn-sp-text {
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: 10px;
+  font-family: Averta-Bold;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
 }
@@ -317,8 +380,10 @@ body header .container-top .header-right .btn-support .btn-sp-text {
   }
 }
 body header .container-top .header-right .btn-support .btn-phone {
-  font-size: 16px;
+  font-size: 20px;
   word-spacing: 2px;
+  font-family: Averta-Black;
+  color: #03394e;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body header .container-top .header-right .btn-support .btn-phone {
@@ -341,6 +406,7 @@ body header .container-top i.fas.fa-bars {
 @media (min-width: 320px) and (max-width: 480px) {
   body header .container-top i.fas.fa-bars {
     display: inline-block;
+    margin-top: 6px;
   }
 }
 body section#landing-slider {
@@ -405,6 +471,7 @@ body section#landing-slider .slide-item__container .slide-desc__container .title
   font-size: 53px;
   text-align: center;
   line-height: 80px;
+  font-family: UVF-SlimTony;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body section#landing-slider .slide-item__container .slide-desc__container .title {
@@ -421,6 +488,7 @@ body section#landing-slider .slide-item__container .slide-desc__container .title
 }
 body section#landing-slider .slide-item__container .slide-desc__container .title .small-title1 {
   font-size: 40px;
+  font-family: UVF-SlimTony;
   color: #102b6b;
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -436,6 +504,7 @@ body section#landing-slider .slide-item__container .slide-desc__container .title
 body section#landing-slider .slide-item__container .slide-desc__container .title .title1 {
   font-size: 60px;
   color: #102b6b;
+  font-family: UVF-SlimTony;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body section#landing-slider .slide-item__container .slide-desc__container .title .title1 {
@@ -449,6 +518,15 @@ body section#landing-slider .slide-item__container .slide-desc__container .title
 }
 body section#landing-slider .slide-item__container .slide-desc__container .title .small-title {
   font-size: 35px;
+}
+body section#landing-slider .slide-item__container .slide-desc__container .title .small-title.s2 {
+  font-family: UVF-SlimTony;
+}
+body section#landing-slider .slide-item__container .slide-desc__container .title .small-title.s1 {
+  font-family: jamai;
+}
+body section#landing-slider .slide-item__container .slide-desc__container .title .small-title.s1 span {
+  font-family: jamai;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body section#landing-slider .slide-item__container .slide-desc__container .title .small-title {
@@ -503,15 +581,17 @@ body section#landing-slider .slide-item__container .slide-desc__container .slide
 }
 body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn3 {
   background-color: #f9c835;
+  font-family: Averta-Black;
+}
+body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn3 a {
+  color: #03394e;
 }
 body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn3:hover {
   background-color: #ffffff;
 }
-body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn3:hover a {
-  color: #f9c835;
-}
 body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn1 {
   background-color: #ee244e;
+  font-family: Averta-Black;
 }
 body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn1:hover {
   background-color: #ffffff;
@@ -521,20 +601,23 @@ body section#landing-slider .slide-item__container .slide-desc__container .slide
 }
 body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn2 {
   background-color: #f9c835;
+  font-family: Averta-Black;
+}
+body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn2 a {
+  color: #03394e;
 }
 body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn2:hover {
   background-color: #ffffff;
 }
-body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review.btn2:hover a {
-  color: #f9c835;
-}
 body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review a {
+  font-family: Averta-Black;
   color: #ffffff;
   font-size: 22px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body section#landing-slider .slide-item__container .slide-desc__container .slider-btn .btn-review a {
-    font-size: 11px;
+    font-size: 10px;
+    line-height: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -619,7 +702,7 @@ body section#landing-slider .btn-slide.btn-next {
 body .why {
   width: 100%;
   background-color: #d1d1d1;
-  height: 918px;
+  height: 870px;
   padding: 58px 0 0 0;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -631,7 +714,7 @@ body .why {
 @media (min-width: 320px) and (max-width: 480px) {
   body .why {
     padding: 20px 0 0 0;
-    height: 830px;
+    height: auto;
   }
 }
 @media screen and (width: 1366px), screen and (height: 768px) {
@@ -644,7 +727,8 @@ body .why h1.why-title {
   font-size: 25px;
   font-weight: 400;
   color: #102b6b;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
+  font-family: Averta-Black;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .why h1.why-title {
@@ -700,7 +784,7 @@ body .why .top-content .top-content__left {
   body .why .top-content .top-content__left {
     margin-left: 0;
     width: 100%;
-    height: 156px;
+    height: 172px;
   }
 }
 @media screen and (width: 1366px), screen and (height: 768px) {
@@ -738,11 +822,11 @@ body .why .top-content .top-content__right {
   }
 }
 body .why .top-content .top-content__right p {
-  font-size: 17px;
+  font-family: Averta-Regular;
+  font-size: 16px;
   color: #102b6b;
   font-weight: 400;
-  margin: 10px 0 80px 0;
-  font-family: auto;
+  margin: 10px 0 70px 0;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .why .top-content .top-content__right p {
@@ -760,11 +844,14 @@ body .why .top-content .top-content__right p {
     margin: 5px 0 10px 0;
   }
 }
+body .why .top-content .top-content__right p span {
+  font-family: Averta-Bold;
+}
 body .why .top-content .top-content__right a {
   color: #ee244e;
   text-decoration: underline;
   font-size: 16px;
-  font-family: auto;
+  font-family: Averta-Black;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .why .top-content .top-content__right a {
@@ -799,6 +886,7 @@ body .why .bottom-content h3 {
   color: #102b6b;
   font-size: 20px;
   font-weight: 500;
+  font-family: Averta-SemiboldItalic;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .why .bottom-content h3 {
@@ -819,6 +907,10 @@ body .why .bottom-content .items .item {
   font-family: auto;
   font-size: 16px;
   line-height: 30px;
+  font-family: Averta-Regular;
+}
+body .why .bottom-content .items .item span {
+  font-family: Averta-Semibold;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .why .bottom-content .items .item {
@@ -847,7 +939,7 @@ body .why .high-line {
 @media (min-width: 320px) and (max-width: 480px) {
   body .why .high-line {
     margin-top: 22px;
-    padding-top: 6px;
+    padding-top: 22px;
     height: 120px;
   }
 }
@@ -867,6 +959,7 @@ body .why .high-line a .btn-review {
   font-size: 22px;
   margin-right: 15px;
   text-transform: uppercase;
+  font-family: Averta-Black;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .why .high-line a .btn-review {
@@ -886,18 +979,19 @@ body .why .high-line a .btn-review {
 body .why .high-line .text {
   font-size: 18px;
   color: #03394e;
+  font-family: GeoSlab703-Medium;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .why .high-line .text {
     display: block;
-    font-size: 0.6rem;
+    font-size: 12pxrem;
     width: 70%;
     margin: 10px auto 0 auto;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .why .high-line .text {
-    font-size: 0.5rem;
+    font-size: 11px;
     display: block;
     width: 90%;
     margin: 3px auto;
@@ -970,19 +1064,20 @@ body .book-intro .intro-container .content-right {
 @media (min-width: 768px) and (max-width: 1024px) {
   body .book-intro .intro-container .content-right {
     width: calc(100% - 330px - 3%);
-    height: 340px;
+    height: auto;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .book-intro .intro-container .content-right {
     width: 100%;
+    height: auto;
   }
 }
 body .book-intro .intro-container .content-right h5 {
   font-size: 25px;
   color: #102b6b;
   font-weight: 400;
-  font-family: auto;
+  font-family: GeoSlab703-Extra;
   line-height: 40px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -999,7 +1094,7 @@ body .book-intro .intro-container .content-right h5 {
 body .book-intro .intro-container .content-right .sub {
   color: #102b6b;
   font-size: 20px;
-  font-family: auto;
+  font-family: GeoSlab703-Medium;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .book-intro .intro-container .content-right .sub {
@@ -1029,7 +1124,7 @@ body .book-intro .intro-container .content-right ul .item {
   margin-bottom: 15px;
   color: #ac6300;
   font-size: 20px;
-  font-family: auto;
+  font-family: Averta-ExtraBold;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .book-intro .intro-container .content-right ul .item {
@@ -1045,11 +1140,18 @@ body .book-intro .intro-container .content-right ul .item {
     margin-bottom: 0;
   }
 }
+body .book-intro .intro-container .content-right ul .item .fs-small {
+  font-family: Averta-Regular;
+}
 body .book-intro .intro-container .content-right .desc {
   height: 108px;
   width: 485px;
-  font-family: auto;
-  color: #102bcf;
+  font-family: GeoSlab703-Light;
+  color: #102b6b;
+}
+body .book-intro .intro-container .content-right .desc .fs-big {
+  color: #102b6b;
+  font-family: GeoSlab703-Extra;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .book-intro .intro-container .content-right .desc {
@@ -1070,13 +1172,13 @@ body .book-intro .intro-container .content-right .right-btn {
 @media (min-width: 768px) and (max-width: 1024px) {
   body .book-intro .intro-container .content-right .right-btn {
     width: 70%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .book-intro .intro-container .content-right .right-btn {
     width: 70%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 }
 body .book-intro .intro-container .content-right .right-btn a {
@@ -1088,16 +1190,12 @@ body .book-intro .intro-container .content-right .right-btn a .review {
   background-color: #ee244e;
   width: 100%;
   height: 100%;
+  font-family: Averta-Black;
+  font-size: 18px;
   outline: none;
   border-radius: 30px;
   border: none;
   color: #ffffff;
-  margin-top: 20px;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  body .book-intro .intro-container .content-right .right-btn a .review {
-    margin-top: 10px;
-  }
 }
 body .step1,
 body .step2 {
@@ -1142,6 +1240,7 @@ body .step2 .container h2 {
   font-size: 40px;
   color: #102b6b;
   margin-bottom: 40px;
+  font-family: UVF-SlimTony;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .step1 .container h2,
@@ -1285,7 +1384,6 @@ body .step2 .container .content .right-content {
   height: 100%;
   vertical-align: top;
   padding-left: 60px;
-  font-family: auto;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .step1 .container .content .right-content,
@@ -1306,6 +1404,11 @@ body .step2 .container .content .right-content p {
   font-size: 15px;
   color: #03394e;
   width: 92%;
+  font-family: Averta-Regular;
+}
+body .step1 .container .content .right-content p:nth-child(2),
+body .step2 .container .content .right-content p:nth-child(2) {
+  font-family: Averta-RegularItalic;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .step1 .container .content .right-content p,
@@ -1332,6 +1435,11 @@ body .step2 .container .content .right-content p .highline {
   font-size: 18px;
   font-weight: 500;
   color: #102b6b;
+  font-family: Averta-Bold;
+}
+body .step1 .container .content .right-content p .italic,
+body .step2 .container .content .right-content p .italic {
+  font-family: Averta-SemiboldItalic;
 }
 body .step1 .container .content .right-content .p-last,
 body .step2 .container .content .right-content .p-last {
@@ -1339,20 +1447,23 @@ body .step2 .container .content .right-content .p-last {
   font-size: 18px;
   font-weight: 500;
   color: #102b6b;
+  font-family: Averta-Bold;
 }
 body .step1 .container .content .right-content .step-title,
 body .step2 .container .content .right-content .step-title {
   font-size: 18px;
   color: #102b6b;
   text-decoration: underline;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
+  font-family: Averta-BoldItalic;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .step1 .container .content .right-content .step-title,
   body .step2 .container .content .right-content .step-title {
-    letter-spacing: 1px;
     margin-bottom: 15px;
     padding-right: 0;
+    font-size: 17px;
+    letter-spacing: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1371,6 +1482,7 @@ body .step2 .container .content .right-content ul li {
   font-size: 15px;
   color: #03394e;
   line-height: 30px;
+  font-family: Averta-Regular;
 }
 body .step1 .container .content .right-content a,
 body .step2 .container .content .right-content a {
@@ -1381,6 +1493,7 @@ body .step2 .container .content .right-content a {
 @media (min-width: 320px) and (max-width: 480px) {
   body .step1 .container .content .right-content a,
   body .step2 .container .content .right-content a {
+    margin: 0 auto;
     margin-bottom: 15px;
   }
 }
@@ -1400,6 +1513,7 @@ body .step2 .container .content .right-content a .review {
   background-color: #f9c835;
   color: #03394e;
   font-size: 20px;
+  font-family: Averta-ExtraBold;
 }
 body .step2 {
   background-color: #e8e4e1;
@@ -1530,12 +1644,33 @@ body .step34 .right .container .content .step-title {
   font-size: 18px;
   color: #102b6b;
   margin-bottom: 8px;
+  font-family: Averta-BoldItalic;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .step34 .left .container .content .step-title,
+  body .step34 .right .container .content .step-title {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body .step34 .left .container .content .step-title,
+  body .step34 .right .container .content .step-title {
+    font-size: 17px;
+  }
 }
 body .step34 .left .container .content p,
 body .step34 .right .container .content p {
   margin-bottom: 15px;
   font-size: 15px;
   color: #03394e;
+}
+body .step34 .left .container .content p:nth-child(2),
+body .step34 .right .container .content p:nth-child(2) {
+  font-family: Averta-RegularItalic;
+}
+body .step34 .left .container .content p:nth-child(2) span,
+body .step34 .right .container .content p:nth-child(2) span {
+  font-family: Averta-SemiboldItalic;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .step34 .left .container .content p,
@@ -1552,6 +1687,7 @@ body .step34 .right .container .content p {
 body .step34 .left .container .content p .highline,
 body .step34 .right .container .content p .highline {
   font-size: 18px;
+  font-family: Averta-Bold;
   color: #102b6b;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1570,6 +1706,7 @@ body .step34 .left .container .content .last,
 body .step34 .right .container .content .last {
   margin-top: 20px;
   margin-bottom: 50px;
+  font-family: Averta-Regular;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .step34 .left .container .content .last,
@@ -1620,7 +1757,7 @@ body .step34 .right .container .content .two-img .small-img {
 @media (min-width: 320px) and (max-width: 480px) {
   body .step34 .left .container .content .two-img .small-img,
   body .step34 .right .container .content .two-img .small-img {
-    width: 48%;
+    width: 47%;
     height: 252px;
   }
 }
@@ -1662,6 +1799,9 @@ body .step34 .bottom .txt {
   font-size: 18px;
   text-decoration: underline;
 }
+body .step34 .bottom .txt span {
+  font-family: Averta-SemiboldItalic;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   body .step34 .bottom .txt {
     display: none;
@@ -1676,6 +1816,16 @@ body .step34 .bottom a {
   display: inline-block;
   width: 192px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .step34 .bottom a {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body .step34 .bottom a {
+    width: 48%;
+  }
+}
 body .step34 .bottom a button {
   height: 38px;
   width: 100%;
@@ -1685,6 +1835,7 @@ body .step34 .bottom a button {
   background-color: #f9c835;
   color: #03394e;
   font-size: 18px;
+  font-family: Averta-ExtraBold;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .step34 .bottom a button {
@@ -1712,9 +1863,7 @@ body .patience {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .patience {
-    height: 410px;
-    background-size: 126%;
-    background-position: 50% 50%;
+    background: #eaeff3;
   }
 }
 body .patience .fade {
@@ -1728,11 +1877,11 @@ body .patience .fade {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .patience .fade {
-    height: 325px;
+    display: none;
   }
 }
 body .patience .content {
-  width: 25.5%;
+  width: 20.5%;
   position: absolute;
   top: 12%;
   left: 14%;
@@ -1744,16 +1893,36 @@ body .patience .content {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .patience .content {
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 8%;
     width: 85%;
   }
 }
+body .patience .content .image {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .patience .content .image {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body .patience .content .image {
+    display: block;
+    height: 210px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+body .patience .content .image img {
+  width: 100%;
+  height: 210px;
+}
 body .patience .content p {
-  color: #102b6b;
+  color: #03394e;
   margin-bottom: 20px;
   font-size: 15px;
-  font-family: none;
+  font-family: Averta-Regular;
   font-weight: 500;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1764,11 +1933,13 @@ body .patience .content p {
 @media (min-width: 320px) and (max-width: 480px) {
   body .patience .content p {
     font-size: 11px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
 }
 body .patience .content p .num {
-  font-size: 20px;
+  font-size: 15px;
+  font-family: Averta-Semibold;
+  color: #102b6b;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .patience .content p .num {
@@ -1782,6 +1953,11 @@ body .patience .content p .num {
 }
 body .patience .content .p2 {
   font-size: 14px;
+  color: #102b6b;
+  font-family: Averta-RegularItalic;
+}
+body .patience .content .p2 span {
+  font-family: Averta-SemiboldItalic;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .patience .content .p2 {
@@ -1795,6 +1971,8 @@ body .patience .content .p2 {
 }
 body .patience .content .title {
   font-size: 20px;
+  font-family: Averta-Bold;
+  color: #102b6b;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .patience .content .title {
@@ -1822,11 +2000,13 @@ body .patience .content .btn button {
   height: 100%;
   font-size: 18px;
   font-weight: 600;
-  font-family: inherit;
+  font-family: Averta-ExtraBold;
 }
 body .patience .content .last {
   font-size: 11px;
   margin: 5px 0 0 20%;
+  font-family: Averta-RegularItalic;
+  color: #102b6b;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .patience .content .last {
@@ -1891,7 +2071,7 @@ body .video .container .left {
 body .video .container .left h4 {
   font-size: 25px;
   color: #102b6b;
-  font-family: inherit;
+  font-family: Averta-Bold;
   margin-bottom: 25px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1901,12 +2081,12 @@ body .video .container .left h4 {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .video .container .left h4 {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 body .video .container .left h4 span {
   color: red;
-  font-family: inherit;
+  font-family: Averta-Bold;
 }
 body .video .container .left iframe {
   box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5);
@@ -1943,7 +2123,7 @@ body .video .container .right {
   body .video .container .right {
     margin-left: 0;
     width: 100%;
-    padding: 5%;
+    padding: 4%;
   }
 }
 @media (min-width: 1366px) and (max-width: 1500px) {
@@ -1953,7 +2133,7 @@ body .video .container .right {
 }
 body .video .container .right h5 {
   font-size: 25px;
-  font-family: inherit;
+  font-family: Averta-Bold;
   color: #102b6b;
   margin-bottom: 20px;
 }
@@ -1968,12 +2148,12 @@ body .video .container .right h5 {
   }
 }
 body .video .container .right h5 span {
-  font-family: inherit;
+  font-family: Averta-Bold;
   color: #ee244e;
 }
 body .video .container .right .desc {
   font-size: 15px;
-  font-family: inherit;
+  font-family: Averta-Regular;
   color: #102b6b;
   line-height: 25px;
   margin-bottom: 30px;
@@ -1989,11 +2169,14 @@ body .video .container .right .desc {
     margin-bottom: 15px;
   }
 }
+body .video .container .right .desc span {
+  font-family: Averta-Semibold;
+}
 body .video .container .right p {
   font-size: 15px;
   font-weight: 500;
   color: #102b6b;
-  font-family: inherit;
+  font-family: Averta-Regular;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .video .container .right p {
@@ -2008,7 +2191,7 @@ body .video .container .right p {
 }
 body .video .container .right p span {
   font-size: 20px;
-  font-family: inherit;
+  font-family: jamai;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .video .container .right p span {
@@ -2036,9 +2219,11 @@ body .video .container .right a button {
   outline: none;
   background-color: #fb1f34;
   color: #ffffff;
+  font-family: Averta-Black;
+  font-size: 18px;
 }
 body .video .container .right .subscribe {
-  font-family: inherit;
+  font-family: Averta-RegularItalic;
   font-size: 15px;
   font-weight: 500;
 }
@@ -2054,7 +2239,7 @@ body .video .container .right .subscribe {
 }
 body .video .container .right .sp {
   font-size: 18px;
-  font-family: inherit;
+  font-family: Averta-Regular;
   margin-top: 5px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2066,6 +2251,9 @@ body .video .container .right .sp {
   body .video .container .right .sp {
     font-size: 15px;
   }
+}
+body .video .container .right .sp span {
+  font-family: Averta-Bold;
 }
 body .reviews {
   background-image: url('images/Background đánh giá độc giả.jpg');
@@ -2122,7 +2310,7 @@ body .reviews .container {
   }
 }
 body .reviews .container .row {
-  padding: 70px 15px 70px 15px;
+  padding: 50px 15px 70px 15px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .reviews .container .row {
@@ -2137,8 +2325,8 @@ body .reviews .container .row {
 body .reviews .container .row h3 {
   color: #ffffff;
   font-size: 40px;
-  margin-bottom: 24px;
   text-align: center;
+  font-family: UVF-SlimTony;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .reviews .container .row h3 {
@@ -2148,7 +2336,7 @@ body .reviews .container .row h3 {
 @media (min-width: 320px) and (max-width: 480px) {
   body .reviews .container .row h3 {
     font-size: 1.5rem;
-    margin-top: 20  px;
+    margin-top: 20px;
   }
 }
 body .reviews .container .row .slick-track {
@@ -2193,7 +2381,7 @@ body .reviews .container .row .slick-track .reviews__item .reviews__item-inner .
   line-height: 25px;
   word-spacing: 3px;
   letter-spacing: 1px;
-  font-family: inherit;
+  font-family: Averta-RegularItalic;
   margin-bottom: 30px;
   min-height: 375px;
 }
@@ -2201,17 +2389,17 @@ body .reviews .container .row .slick-track .reviews__item .reviews__item-inner .
   color: #102b6b;
   text-align: center;
   font-size: 15px;
-  font-family: inherit;
+  font-family: Averta-Bold;
   line-height: 22px;
 }
 body .reviews .container .row .slick-track .reviews__item .reviews__item-inner .reviews__item-name span {
-  font-family: inherit;
+  font-family: Averta-Bold;
 }
 body .reviews .container .row .slick-track .reviews__item .reviews__item-inner .reviews__item-meta {
   color: #102b6b;
   text-align: center;
   font-size: 13px;
-  font-family: inherit;
+  font-family: Averta-RegularItalic;
   line-height: 22px;
 }
 body .reviews .btn-slide {
@@ -2280,7 +2468,7 @@ body .buy-book .container {
 body .buy-book .container h4 {
   font-size: 25px;
   color: #102b6b;
-  font-family: inherit;
+  font-family: Averta-Bold;
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2348,7 +2536,7 @@ body .buy-book .container .steps .step .image .icon img {
   }
 }
 body .buy-book .container .steps .step .desc .title {
-  font-family: inherit;
+  font-family: Averta-Bold;
   font-size: 18px;
   text-align: center;
   color: #102b6b;
@@ -2357,11 +2545,14 @@ body .buy-book .container .steps .step .desc .title {
 }
 body .buy-book .container .steps .step .desc p {
   font-size: 16px;
-  font-family: inherit;
+  font-family: Averta-Regular;
   color: #102b6b;
   line-height: 25px;
   margin-bottom: 25px;
   padding-left: 8px;
+}
+body .buy-book .container .steps .step .desc p span {
+  font-family: Averta-Semibold;
 }
 body .buy-book .container .steps .step .desc a {
   display: block;
@@ -2416,13 +2607,13 @@ body .subscribe-form .fade {
   background-color: rgba(0, 0, 0, 0.5);
 }
 body .subscribe-form .header {
-  width: 606px;
+  width: 640px;
   margin: 0 auto;
   text-align: center;
   z-index: 9999;
   position: absolute;
   top: 7%;
-  left: 34%;
+  left: 32%;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .subscribe-form .header {
@@ -2442,18 +2633,23 @@ body .subscribe-form .header {
   }
 }
 body .subscribe-form .header h5 {
-  font-family: inherit;
+  font-family: Averta-Bold;
   font-size: 25px;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 8px;
 }
 body .subscribe-form .header p {
-  font-family: inherit;
+  font-family: Averta-Regular;
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
   line-height: 25px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body .subscribe-form .header p {
+    font-size: 15px;
+  }
 }
 body .subscribe-form .image {
   position: absolute;
@@ -2512,13 +2708,13 @@ body .subscribe-form .form {
 body .subscribe-form .form h5 {
   font-size: 20px;
   text-align: center;
-  font-family: inherit;
+  font-family: Averta-Bold;
   font-weight: 500;
   color: #102b6b;
   margin-bottom: 5px;
 }
 body .subscribe-form .form p {
-  font-family: inherit;
+  font-family: Averta-Regular;
   font-weight: 500;
   font-size: 13px;
   color: #102b6b;
@@ -2534,6 +2730,7 @@ body .subscribe-form .form input[type="email"] {
   border: 1px solid #bfbfbf;
   line-height: 34px;
   padding-left: 10px;
+  font-family: Averta-Regular;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .subscribe-form .form input[type="text"],
@@ -2546,13 +2743,14 @@ body .subscribe-form .form input[type="email"]::placeholder {
   font-size: 13px;
   color: #707070;
   line-height: 25px;
-  font-family: inherit;
+  font-family: Averta-Regular;
   font-weight: 400;
 }
 body .subscribe-form .form .choose {
   text-align: left;
   margin: 15px 0 10px 30px;
   font-size: 15px;
+  font-family: Averta-Semibold;
 }
 body .subscribe-form .form .payment {
   margin: 0 0 8px 30px;
@@ -2560,57 +2758,8 @@ body .subscribe-form .form .payment {
 body .subscribe-form .form .payment input {
   margin-right: 5px;
 }
-body .subscribe-form .form .payment [type="radio"]:checked,
-body .subscribe-form .form .payment [type="radio"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-body .subscribe-form .form .payment [type="radio"]:checked + label,
-body .subscribe-form .form .payment [type="radio"]:not(:checked) + label {
-  position: relative;
-  padding-left: 28px;
-  cursor: pointer;
-  line-height: 20px;
-  display: inline-block;
-  color: #666;
-}
-body .subscribe-form .form .payment [type="radio"]:checked + label:before,
-body .subscribe-form .form .payment [type="radio"]:not(:checked) + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ddd;
-  border-radius: 100%;
-  background: #fff;
-}
-body .subscribe-form .form .payment [type="radio"]:checked + label:after,
-body .subscribe-form .form .payment [type="radio"]:not(:checked) + label:after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  background: #F87DA9;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-body .subscribe-form .form .payment [type="radio"]:not(:checked) + label:after {
-  opacity: 0;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-body .subscribe-form .form .payment [type="radio"]:checked + label:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
 body .subscribe-form .form .payment label {
-  font-family: inherit;
+  font-family: Avert-Regular;
   font-size: 15px;
   color: #707070;
   line-height: 25px;
@@ -2619,6 +2768,7 @@ body .subscribe-form .form .warning {
   margin-left: 25px;
   margin-top: 8px;
   text-align: start;
+  font-family: Averta-Regular;
 }
 body .subscribe-form .form button[type="submit"] {
   width: 255px;
@@ -2629,6 +2779,7 @@ body .subscribe-form .form button[type="submit"] {
   color: #ffffff;
   outline: none;
   background-color: #ff1f34;
+  font-family: Averta-Black;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body .subscribe-form .form button[type="submit"] {
@@ -2666,7 +2817,7 @@ body footer .container {
   }
 }
 body footer .container .left {
-  width: 210px;
+  width: 220px;
   height: 100%;
   display: inline-block;
 }
@@ -2684,17 +2835,18 @@ body footer .container .left {
 body footer .container .left .logo {
   width: 152px;
   height: 58px;
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: 900;
+  text-indent: -9999px;
+  background-image: url('images/[eLight] Logo_White.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
   text-transform: lowercase;
   font-family: cursive;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   body footer .container .left .logo {
     font-size: 2rem;
-    width: 100%;
-    text-align: center;
+    margin: 0 auto;
   }
 }
 body footer .container .left span.desc {
@@ -2715,7 +2867,7 @@ body footer .container .left span.desc {
 }
 body footer .container .left span.desc p {
   font-size: 15px;
-  font-family: inherit;
+  font-family: Averta-Regular;
   padding-top: 5px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2730,7 +2882,7 @@ body footer .container .left span.desc p {
 }
 body footer .container .right {
   display: inline-block;
-  width: calc(100% - 12% - 215px);
+  width: calc(100% - 12% - 225px);
   margin-left: 12%;
   height: 100%;
 }
@@ -2793,6 +2945,18 @@ body footer .container .right .top .support .phone {
     font-size: 1rem;
   }
 }
+body footer .container .right .top .support .email label,
+body footer .container .right .top .support .phone label {
+  font-family: Averta-Bold;
+}
+body footer .container .right .top .support .email span,
+body footer .container .right .top .support .phone span {
+  font-family: Averta-Regular;
+}
+body footer .container .right .top .support .email span.num,
+body footer .container .right .top .support .phone span.num {
+  font-family: Averta-ExtraBold;
+}
 body footer .container .right .top .support .phone span {
   color: #ee244e;
 }
@@ -2807,6 +2971,7 @@ body footer .container .right .addr {
 }
 body footer .container .right .addr label {
   font-size: 20px;
+  font-family: Averta-Bold;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body footer .container .right .addr label {
@@ -2820,6 +2985,7 @@ body footer .container .right .addr label {
 }
 body footer .container .right .addr span {
   font-size: 15px;
+  font-family: Averta-Regular;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body footer .container .right .addr span {
